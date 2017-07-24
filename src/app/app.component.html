@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<html>
+<script>
+   var userName=document.getElementByName("userName");
+   if(userName)
+   {
+    document.getElementById("btn").disabled=false;
+   }
+  </script>
+
+  <h1>
+    {{title}}
+  </h1>
+  </body>
+  <form  #userForm="ngForm" (ng-submit)="onFormSubmit(userForm)">
+  Github Username: <input type="text" value="github_username" name="userName" #userName="ngModel" required/>
+  <button disabled="true"> calculate my gitHub score</button>
+  </form>
+</body></html>
